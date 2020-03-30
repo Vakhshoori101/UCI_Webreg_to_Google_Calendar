@@ -1,4 +1,4 @@
-# Adding UCI Webreg Course to Google Calendar
+# Adding UCI Webreg Courses to Google Calendar
 
  Created using Selenium technology to log into UCI Webreg and view the user's list of courses for the quarter. User can directly add these courses to their calendar using Google's Calendar API.
 
@@ -8,27 +8,31 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* Python 3+
+* Chrome
+* A Google Account
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+* install Selenium
 
 ```
-Give the example
+pip install selenium
 ```
 
-And repeat
+* install Chrome Driver (save the path of file)
+
+https://chromedriver.chromium.org/
+
+* install Google API Client
 
 ```
-until finished
+pip install google-api-python-client
 ```
+
+* create google credentials to access calendar (save the path of the file)
+The youtube video linked below gives clear instructions on how to create and save the credentials.
+https://www.youtube.com/watch?v=j1mh0or2CX8&t=1456s
 
 End with an example of getting some data out of the system or using it for a little demo
 
@@ -44,23 +48,9 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 
 
