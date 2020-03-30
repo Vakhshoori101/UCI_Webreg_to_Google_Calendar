@@ -31,7 +31,7 @@ pip install google-api-python-client
 ```
 
 * create google credentials to access calendar (save the path of the file)
-The youtube video linked below gives clear instructions on how to create and save the credentials.
+  *The youtube video linked below gives clear instructions on how to create and save the credentials.
 https://www.youtube.com/watch?v=j1mh0or2CX8&t=1456s
 
 End with an example of getting some data out of the system or using it for a little demo
