@@ -1,6 +1,6 @@
 # Adding UCI Webreg Course to Google Calendar
 
-  Created using Selenium technology to log into UCI Webreg and view the user's list of courses for the quarter. User can directly add these courses to their calendar using google's calendar API
+ Created using Selenium technology to log into UCI Webreg and view the user's list of courses for the quarter. User can directly add these courses to their calendar using Google's Calendar API.
 
 ## Getting Started
 
