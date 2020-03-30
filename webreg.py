@@ -1,5 +1,4 @@
 from selenium import webdriver
-import time
 from bs4 import BeautifulSoup
 import re
 from google_calendar import Calendar
@@ -106,7 +105,7 @@ class webreg:
 
     def add_classes_to_calendar(self):
         calendar = Calendar()
-        for course in self.get_study_list()[0]:
+        for course in self.get_study_list():
             if course["Time"] != "ON LINE":
                 calendar.add_event(course)
 
