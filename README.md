@@ -1,6 +1,6 @@
-# Project Title
+# Adding UCI Webreg Course to Google Calendar
 
-One Paragraph of project description goes here
+  Created using Selenium technology to log into UCI Webreg and view the user's list of courses for the quarter. User can directly add these courses to their calendar using google's calendar API
 
 ## Getting Started
 
