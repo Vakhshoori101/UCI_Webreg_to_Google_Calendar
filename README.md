@@ -74,7 +74,8 @@ w.login()
 print(w.get_study_list())
 
 # Adds study list to Google Calendar
-# While running, will require authorization code to connect to the calendar
+# Requires authorization code to connect to the calendar
+# Steps to get code: click given URL -> choose google account with wanted calendar -> click "Advanced" -> click "Go to UCI Schedule -> click "Allow" -> copy authorication code and paste in terminal -> choose which calendar to be edited.
 w.add_classes_to_calendar()
 
 # Log out of UCI Webreg
