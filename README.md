@@ -35,23 +35,52 @@ pip install google-api-python-client
     *The youtube video linked below gives clear instructions on how to create and save the credentials.
 https://www.youtube.com/watch?v=j1mh0or2CX8&t=1456s
 
-End with an example of getting some data out of the system or using it for a little demo
+* download github repository
 
-## Running the tests
+    * can use github link: https://github.com/Vakhshoori101/UCI_Webreg_to_Google_Calendar.git
+    
+    * can download as zip file
 
-Explain how to run the automated tests for this system
+## Features
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+* login and logout of Webreg account
+* view study list
+* add courses from study list to Google Calendar
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+1. Fill out information in "config.py"
 
+```
+config = {
+    "username" : "",                   # Webreg Username
+    "password" : "",                   # Webreg Password
+    "client_secret_path" : "",         # Path to find json file containing User's Google Credentials
+    "chrome_driver_path" : ""          # Path for Chrome Driver
+}
+```
 
+2.  Create new file to use features 
+
+```
+from webreg import webreg
+
+w = webreg()
+
+# Logging into UCI Webreg
+w.login()
+
+# Returns a list of UCI Courses and their information
+print(w.get_study_list())
+
+# Adds study list to Google Calendar
+# While running, will require authorization code to connect to the calendar
+w.add_classes_to_calendar()
+
+# Log out of UCI Webreg
+w.logout()
+
+```
+
+## Enjoy!
 
